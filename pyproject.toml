@@ -1,0 +1,21 @@
+[project]
+name = "ocabelododaniel"
+version = "0.1.0"
+description = "A rigorous, peer-unreviewed quantification of Daniel Pereira's hair loss."
+authors = [
+    { name = "Carlos Bornes", email = "cbornes3@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "marimo>=0.25.1",
+    "numpy>=2.5.4",
+    "opencv-python-headless<5",
+    "pillow>=12.3.0",
+]
+
+[project.scripts]
+ocabelododaniel-build = "ocabelododaniel.build:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
